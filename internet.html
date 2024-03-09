@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css\bootstrap.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kgh Software Solutions</title>
+</head>
+<body>
+  <script src="js\bootstrap.js"></script>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+          <nav class="navbar navbar-expand-lg py-3 navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="https://library.livecanvas.com/sections/">
+                    <img src="data:image/png;base64,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" width="48" height="48" class="align-middle me-1" alt="My Website">
+                    Tech Solutions</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar2" aria-controls="myNavbar2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="lc-block collapse navbar-collapse" id="myNavbar2">
+                    <div lc-helper="shortcode" class="live-shortcode ms-auto"> <!--  lc_nav_menu -->
+                        <ul id="menu-menu-1" class="navbar-nav me-auto mb-2 mb-md-0 navbar-nav">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom nav-item nav-item-32739"><a href="https://library.livecanvas.com/starters" class="nav-link ">Home</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home nav-item nav-item-32738"><a href="https://library.livecanvas.com/sections/" class="nav-link ">Contact</a></li>
+                        </ul> <!-- /lc_nav_menu -->
+                    </div>
+    
+                    <form role="search" method="get" id="searchform" action="/" class="d-flex ms-auto justify-content-center">
+    
+                        <div class="input-group">
+                            <input type="text" value="" name="s" id="s" class="form-control" placeholder="Search..." aria-label="Search">
+                            <span class="input-group-text" id="basic-addon2">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="text-dark" width="1rem" height="1rem" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor">
+                                    <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                                </svg>
+                            </span>
+                        </div>
+    
+                    </form>
+                </div>
+            </div>
+        </nav>
+    
+    
+    
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+           </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>First slide label</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block ">
+                      <h5>Second slide label</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images3.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Third slide label</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-6 bg-gradient ">
+              <div class="container text-center mt-5">
+                <h2>About Us</h2>
+                <div class="row">
+                    <div class="col-md-4 offset-md-4">
+                        <div class="rounded-circle  text-center p-3">
+                            <img src="comp.jpg" alt="About Us Image" class="img-fluid rounded-circle" style="max-width: 100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-8 offset-md-2">
+                        <p>Our mission is to organise the world's information and make it universally accessible and useful.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Bootstrap JS and jQuery (you may need to include them based on your project setup) -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+         </div>
+        </div>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="Software-Development.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Software Development</h5>
+              <p class="card-text">Looking for customized enterprise software for your company? Let's build it.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img.avif" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Website Development</h5>
+              <p class="card-text">Take your business online with a highly responsive and professional websites.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+     </div>
+     <div class="col-md-4">
+      <div class="card">
+            <img src="webhost.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Domain Hosting</h5>
+              <p class="card-text">Dont worry about the hosting costs. we provide you the custom Web hosting plans.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+     </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+           
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="lc-block mb-3 mb-md-0">
+                    <div class="ratio ratio-16x9" lc-helper="video-embed">
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/JZsO3chEHWc?si=T8xCGn_KxsRhyNEJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div><!-- /lc-block -->
+            </div><!-- /col -->
+            <div class="col-md-6 align-self-center">
+
+                <div class="lc-block mb-2">
+                    <div editable="rich">
+                        <h1>Company Video</h1>
+                        <p class=" text-secondary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat. In pellentesque scelerisque auctor. Ut porta lacus eget nisi fermentum lobortis. Vestibulum facilisis tempor
+                            ipsum, ut rhoncus magna ultricies laoreet. Proin vehicula erat eget libero accumsan iaculis.
+                        </p>
+                    </div>
+                </div><!-- /lc-block -->
+            </div><!-- /col -->
+        </div>
+    </div>
+
+
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      </div>
+  </div>
+    <div class="row">
+      <div class="row mb-4 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="lc-block text-center">
+                <img class="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/app_development_SVG.svg" srcset="" sizes="" width="" height="">
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-lg-6 p-lg-6">
+            <div class="lc-block mb-5">
+                <div editable="rich">
+
+                    <h2 class="display-6 fw-bold">Boost your Creativity</h2>
+
+                    <p class="lead"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus.</p>
+                </div>
+            </div><!-- /lc-block -->
+            <!-- /lc-block -->
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Aenean vel nisi in ipsum congue</p>
+                    </div>
+                </div>
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+    </div>
+    <div class="row mb-4 align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0 order-lg-1">
+            <div class="lc-block text-center">
+                <img class="img-fluid w-50" src="https://cdn.livecanvas.com/media/svg/isometric/Startup_SVG.svg" srcset="" sizes="" width="" height="">
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+        <div class="col-lg-6 p-lg-6">
+            <div class="lc-block mb-5">
+                <div editable="rich">
+
+                    <h2 class="display-6 fw-bold">Increase your Sales</h2>
+
+                    <p class="lead"><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse a lacus est. Etiam diam metus.</p>
+                </div>
+            </div><!-- /lc-block -->
+            <!-- /lc-block -->
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lc-block">
+                <div class="d-inline-flex">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="text-primary" viewBox="0 0 16 16" lc-helper="svg-icon">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                    </div>
+
+                    <div class="ms-3 align-self-center" editable="rich">
+                        <p>Aenean vel nisi in ipsum congue</p>
+                    </div>
+                </div>
+            </div><!-- /lc-block -->
+        </div><!-- /col -->
+    </div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<div class="row">
+  <div class="row align-items-md-center mb-5">
+    <div class="col-md-12">
+        <div class="lc-block text-center"><span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+            <h2 editable="inline" class="display-2 mb-0"><b>About the Company</b></h2>
+            <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus <br> id ligula malesuada placerat sit amet quis enim.</p>
+        </div><!-- /lc-block -->
+    </div><!-- /col -->
+</div>
+<div class="row align-items-md-center mb-5">
+    <div class="col-md-6 pr-5">
+        <div class="lc-block py-2">
+            <span class="badge bg-dark" editable="inline">COMPANY INFO</span>
+        </div>
+        <div class="lc-block mb-4">
+            <h2 editable="inline">Working Together, to build great projects.</h2>
+        </div>
+        <div class="lc-block">
+
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="lc-block mb-4">
+                        <p editable="inline" class=" m-0" style="font-size:40px;">3+</p>
+                        <p editable="inline" class="small text-uppercase">Branches</p>
+                    </div><!-- /lc-block -->
+                </div>
+                <div class="col-6">
+                    <div class="lc-block mb-4">
+                        <p editable="inline" class=" m-0" style="font-size:40px;">48+</p>
+                        <p editable="inline" class="small text-uppercase">Offices</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="lc-block mb-4">
+                        <p editable="inline" class=" m-0" style="font-size:40px;">33+</p>
+                        <p editable="inline" class="small text-uppercase">Events over the world</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="lc-block mb-4">
+                        <p editable="inline" class=" m-0" style="font-size:40px;">4800+</p>
+                        <p editable="inline" class="small text-uppercase">Members</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lc-block text-muted">
+            <div editable="rich">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.&nbsp;</p>
+                <p>In pellentesque scelerisque auctor. Ut porta lacus eget nisi fermentum lobortis. Vestibulum facilisis tempor
+                    ipsum, ut rhoncus magna ultricies laoreet. Proin vehicula erat eget libero accumsan iaculis.</p>
+            </div>
+        </div><!-- /lc-block -->
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="lc-block">
+            <div class="card shadow-sm border-light">
+                <img src="https://images.unsplash.com/photo-1525296143957-b62256c593bf?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Featured image 1" class="card-img-top" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title" editable="inline">Coffee</h3>
+                    <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
+                    <p class="card-text" editable="inline">Some quick example text to build on the card title</p>
+                </div>
+            </div>
+        </div>
+        <div class="lc-block">
+            <div class="card shadow-sm border-light mt-4">
+                <img src="https://images.unsplash.com/photo-1536060316316-2466bda904f1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Featured image 2" class="card-img-top" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title" editable="inline">Devices</h3>
+                    <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
+                    <p class="card-text" editable="inline">Some quick example text to build on the card title</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6 pl-sm-3 mt-3 mt-sm-0">
+        <div class="lc-block">
+            <div class="card shadow-sm border-light">
+                <img src="https://images.unsplash.com/photo-1507831228884-93d43e81a99d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=632&amp;q=80" alt="Featured image 3" class="card-img-top" loading="lazy">
+                <div class="card-body">
+                    <h3 class="card-title" editable="inline">Productivity</h3>
+                    <!-- <h4 class="card-subtitle" editable="inline">Card subtitle</h4> -->
+                    <p class="card-text" editable="inline">Some quick example text to build on the card title</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</div>
+<div class="row">
+  <div class="row mb-4">
+    <div class="col-md-12 text-center">
+        <div class="lc-block mb-4">
+            <h2 editable="inline" class="rfs-25 fw-bolder">Testimonials</h2>
+            <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id<br> ligula malesuada placerat sit amet quis enim.</p>
+        </div><!-- /lc-block -->
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Nicolas Horn" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1527980965255-d3b416303d12?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1527980965255-d3b416303d12??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8M3x8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">Mathew Glock</h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Leio McLaren" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1628157588553-5eeea00af15c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NHx8YXZhdGFyfGVufDB8Mnx8fDE2Mzg4OTExNTE&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">Tahmid William&nbsp;<p></p>
+                            <p></p>
+                        </h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Amir Seilsepour" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1595152452543-e5fc28ebc2b8??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTh8fGZhY2V8ZW58MHwyfHx8MTYzODg5MTA3MA&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">Jarvis Ridley&nbsp;<p></p>
+                            <p></p>
+                        </h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Imansyah Muhamad Putera" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1542909168-82c3e7fdca5c??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">Bronwen Baxter&nbsp;<p></p>
+                            <p></p>
+                        </h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Conor OBrien" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1579503841516-e0bd7fca5faa??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8NXx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">
+                            Nadir Chandler
+
+                        </h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.
+                        </p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-8 col-lg-4 mb-4">
+        <div class="card border-0 shadow">
+            <div class="card-body py-4">
+                <div class="d-flex">
+                    <img style="width:48px;height:48px" src="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" alt="Photo by Daniil Lobachev" class="rounded-2 shadow" srcset="https://images.unsplash.com/photo-1584308972272-9e4e7685e80f?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1584308972272-9e4e7685e80f??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Nnx8ZmFjZXxlbnwwfDJ8fHwxNjM4ODkxMDU2&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080">
+                    <div class="ps-2">
+                        <h4 editable="inline" class="rfs-7 ms-2">
+                            Samira Goldsmith
+
+                        </h4>
+                    </div>
+                </div>
+                <div class="lc-block mt-4 text-muted">
+                    <div editable="rich">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="rating mt-3 text-success">
+                    <div class="lc-block"> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg> <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" lc-helper="svg-icon">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</div>
+<div class="container py-4 py-md-6">
+  <div class="row py-4">
+      <div class="col-lg-4 mt-lg-2">
+          <div class="lc-block">
+              <div editable="rich">
+                  <p>OUR CLIENTS</p>
+              </div>
+          </div>
+          <div class="lc-block mb-3">
+              <div editable="rich">
+                  <h3 class="display-6">Trusted by over 300+ clients
+                  </h3>
+              </div>
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+                  <p class="lead">We bring solutions to make life easier for our customers.
+                  </p>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-8">
+          <div class="row row-cols-2 row-cols-md-4 g-5 g-xxl-7 align-items-center">
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/1.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/2.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/3.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/4.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/5.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/6.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/7.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+              <div class="col lc-block">
+                  <img class="img-fluid" src="https://cdn.livecanvas.com/media/logos/8.png" width="128" height="auto" alt="" loading="lazy">
+              </div>
+          </div>
+          <!--/.row -->
+      </div>
+  </div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<div class="container py-5">
+  <div class="row mb-5">
+      <div class="col-md-12">
+          <div class="lc-block text-center">
+              <div editable="rich">
+                  <h2 class="fw-bold">
+                      Need Our Help?
+                      <p></p>
+                      <p> </p>
+                      <p></p>
+                  </h2>
+              </div>
+          </div>
+          <div class="lc-block text-center">
+              <div editable="rich">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu<br>fugiat nulla pariatur excepteur sint occaecat.&nbsp;<br>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6 col-lg-4 text-center offset-lg-2">
+          <div class="lc-block mb-4">
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="6em" height="6em" fill="currentColor" viewBox="0 0 16 16" style="" lc-helper="svg-icon" class="text-body">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                      <path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="lc-block mb-6">
+              <div editable="rich">
+                  <p class="h4">Video Documentation</p>
+                  <p class="">Watch our video tutorials</p>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 col-lg-4 text-center">
+          <div class="lc-block mb-4">
+              <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="6em" height="6em" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor" class="text-body">
+                      <path d="M19.79,15.41C20.74,13.24 20.74,10.75 19.79,8.59L17.05,9.83C17.65,11.21 17.65,12.78 17.06,14.17L19.79,15.41M15.42,4.21C13.25,3.26 10.76,3.26 8.59,4.21L9.83,6.94C11.22,6.35 12.79,6.35 14.18,6.95L15.42,4.21M4.21,8.58C3.26,10.76 3.26,13.24 4.21,15.42L6.95,14.17C6.35,12.79 6.35,11.21 6.95,9.82L4.21,8.58M8.59,19.79C10.76,20.74 13.25,20.74 15.42,19.78L14.18,17.05C12.8,17.65 11.22,17.65 9.84,17.06L8.59,19.79M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+                  </svg>
+              </a>
+          </div>
+          <div class="lc-block mb-6">
+              <div editable="rich">
+                  <p class="h4">Faq</p>
+                  <p class="">Check out our faq section</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<div class="container-fluid g-0">
+  <div class="row g-0">
+      <div class="col-md-12">
+          <div class="lc-block overflow-hidden">
+              <div style="max-height:40vh" class="ratio ratio-1x1" lc-helper="gmap-embed">
+                  <iframe src="https://maps.google.com/maps?q=1%20Hacker%20Way%2C%20Menlo%20Park%2C%20CA%2094025%2C%20United%20states&amp;t=m&amp;z=12&amp;output=embed&amp;iwloc=near"></iframe>
+              </div>
+          </div><!-- /lc-block -->
+      </div><!-- /col -->
+  </div>
+</div>
+<div class="container">
+  <div class="row justify-content-center mt-3 mt-lg-5">
+      <div class="col-md-5 me-md-5">
+
+          <img class="img-fluid h-100" style="object-fit:cover" src="https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080" srcset="https://images.unsplash.com/photo-1599930113854-d6d7fd521f10?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080 1080w, https://images.unsplash.com/photo-1599930113854-d6d7fd521f10??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=150 150w, https://images.unsplash.com/photo-1599930113854-d6d7fd521f10??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=300 300w, https://images.unsplash.com/photo-1599930113854-d6d7fd521f10??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=768 768w, https://images.unsplash.com/photo-1599930113854-d6d7fd521f10??crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8Mnx8bWFwfGVufDB8Mnx8fDE2MzYwNDExMTM&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1024 1024w" sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Photo by Gaël Gaborel">
+
+      </div>
+      <div class="col-md-5 bg-light text-center p-5 d-flex flex-column justify-content-center">
+
+          <div class="lc-block mb-4">
+
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="3em" height="3em" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor">
+                  <path d="M14,11.5A2.5,2.5 0 0,0 16.5,9A2.5,2.5 0 0,0 14,6.5A2.5,2.5 0 0,0 11.5,9A2.5,2.5 0 0,0 14,11.5M14,2C17.86,2 21,5.13 21,9C21,14.25 14,22 14,22C14,22 7,14.25 7,9A7,7 0 0,1 14,2M5,9C5,13.5 10.08,19.66 11,20.81L10,22C10,22 3,14.25 3,9C3,5.83 5.11,3.15 8,2.29C6.16,3.94 5,6.33 5,9Z"></path>
+              </svg>
+
+          </div>
+          <div class="lc-block mb-3">
+              <div editable="rich">
+
+                  <h2 class="fw-bolder">Contact Us</h2>
+              </div>
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+
+                  <p>Street 3043 Clarence Court<br>Fayetteville NC
+                      North Carolina 28306</p>
+              </div>
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+
+                  <p class="fw-bolder">tel: 910-249-5283</p>
+              </div>
+          </div>
+          <div class="lc-block">
+              <div editable="rich">
+                  <p class="fw-bolder">email: mymail@mydomain.com</p>
+              </div>
+          </div>
+
+      </div>
+  </div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<div class="container">
+  <div class="row">
+
+      <div class="col-md-12 text-center">
+          <div class="lc-block mb-4">
+              <span editable="inline" class="small mt-4 d-block">LOREM IPSUM</span>
+              <h2 editable="inline" class="display-2 mb-0"><b>Team</b></h2>
+              <p editable="inline"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id<br> ligula malesuada placerat sit amet quis enim.</p>
+          </div><!-- /lc-block -->
+      </div>
+      
+  </div>
+
+  <div class="row pt-4">
+      <div class="col-md-4 text-center py-4">
+          <div class="lc-block"><img alt="" class="rounded-circle mb-3" src="https://images.unsplash.com/photo-1574698550747-3f839e813107?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=772&amp;q=80" style="height:10vh" loading="lazy">
+              <h5 editable="inline"><strong>Neil Amstrong</strong></h5>
+              <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          </div>
+          <div class="lc-block mt-2 border-top">
+              <div editable="rich">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.</p>
+              </div>
+          </div><!-- /lc-block -->
+          <div class="lc-block"><a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" lc-helper="svg-icon" fill="currentColor" width="1em" height="1em">
+                      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                  </svg> </a>
+          </div><!-- /lc-block -->
+      </div>
+      <div class="col-md-4 text-center py-4">
+          <div class="lc-block"><img alt="" class="rounded-circle mb-3" src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" style="height:10vh" loading="lazy">
+              <h5 editable="inline"><strong>Neil Amstrong</strong></h5>
+              <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          </div>
+          <div class="lc-block mt-2 border-top">
+              <div editable="rich">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.</p>
+              </div>
+          </div><!-- /lc-block -->
+          <div class="lc-block"><a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" lc-helper="svg-icon" fill="currentColor" width="1em" height="1em">
+                      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                  </svg> </a>
+          </div><!-- /lc-block -->
+      </div>
+      <div class="col-md-4 text-center py-4">
+          <div class="lc-block"><img alt="" class="rounded-circle mb-3" src="https://images.unsplash.com/photo-1560329072-17f59dcd30a4?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=767&amp;q=80" style="height:10vh" loading="lazy">
+              <h5 editable="inline"><strong>Neil Amstrong</strong></h5>
+              <small editable="inline" class="text-secondary" style="letter-spacing:1px">SOME LIPSUM</small>
+          </div>
+          <div class="lc-block mt-2 border-top">
+              <div editable="rich">
+                  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et metus id ligula malesuada placerat sit amet quis enim. Aliquam erat volutpat.</p>
+              </div>
+          </div><!-- /lc-block -->
+          <div class="lc-block"><a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" lc-helper="svg-icon" fill="currentColor" width="1em" height="1em">
+                      <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                  </svg> </a>
+              <a class="text-dark text-decoration-none" href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="1em" height="1em" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                  </svg> </a>
+          </div><!-- /lc-block -->
+      </div>
+    </div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<div class="container py-4">
+  <div class="row">
+      <div class="col-md-12 text-center">
+          <div class="lc-block mb-4"><span editable="inline" class="mt-4 d-block lead">OUR PRICING PLANS</span>
+              <h2 editable="inline" class="display-2 mb-3"><b>Find the Right Tier.</b></h2>
+              <p editable="inline" class="text-secondary">Flexible pricing options for freelancers and design teams. No Credit Card required!<br></p>
+          </div><!-- /lc-block -->
+      </div>
+  </div>
+  <div class="row mt-4" id="pricing">
+      <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="lc-block py-3 shadow-sm bg-dark text-white rounded">
+
+              <div class="lc-block mb-4 text-left px-4"> <svg class="text-warning" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="2em" height="2em" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M7.07,18.28C7.5,17.38 10.12,16.5 12,16.5C13.88,16.5 16.5,17.38 16.93,18.28C15.57,19.36 13.86,20 12,20C10.14,20 8.43,19.36 7.07,18.28M18.36,16.83C16.93,15.09 13.46,14.5 12,14.5C10.54,14.5 7.07,15.09 5.64,16.83C4.62,15.5 4,13.82 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,13.82 19.38,15.5 18.36,16.83M12,6C10.06,6 8.5,7.56 8.5,9.5C8.5,11.44 10.06,13 12,13C13.94,13 15.5,11.44 15.5,9.5C15.5,7.56 13.94,6 12,6M12,11A1.5,1.5 0 0,1 10.5,9.5A1.5,1.5 0 0,1 12,8A1.5,1.5 0 0,1 13.5,9.5A1.5,1.5 0 0,1 12,11Z"></path>
+                  </svg>
+
+                  <span editable="inline" class="ml-2 fw-light">Individual</span>
+              </div>
+              <div class="lc-block mb-5 px-4">
+                  <div editable="rich">
+                      <h2 class="text-light">Professional</h2>
+
+                      <p class="h5">$19.99 <span class="text-secondary fw-light">/month</span></p>
+                  </div>
+              </div>
+
+              <div class="lc-block mb-5 text-left">
+                  <div editable="rich">
+
+                      <ul>
+                          <li>1 users</li>
+                          <li>20 TB of secure storage</li>
+                          <li>Premium productivity features and simple, secure file sharing</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger " href="#" role="button">Try free for 30 days</a></div><!-- /lc-block -->
+          </div>
+      </div>
+      <!-- /col -->
+      <div class="col-lg-4 mb-4 mb-lg-0">
+          <div class="lc-block py-3 rounded shadow">
+              <div class="lc-block mb-4 text-left px-4"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="text-primary" width="2em" height="2em" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M19 17V19H7V17S7 13 13 13 19 17 19 17M16 8A3 3 0 1 0 13 11A3 3 0 0 0 16 8M19.2 13.06A5.6 5.6 0 0 1 21 17V19H24V17S24 13.55 19.2 13.06M18 5A2.91 2.91 0 0 0 17.11 5.14A5 5 0 0 1 17.11 10.86A2.91 2.91 0 0 0 18 11A3 3 0 0 0 18 5M7.34 8.92L8.5 10.33L3.75 15.08L1 12.08L2.16 10.92L3.75 12.5L7.34 8.92"></path>
+                  </svg>
+
+                  <span editable="inline" class="ml-2 fw-light">Small Team</span>
+              </div>
+              <div class="lc-block mb-5 px-4">
+                  <div editable="rich">
+                      <h2 class=" ">Standard</h2>
+
+                      <p class="h5 text-primary">$39.99 <span class="text-secondary fw-light">/month</span></p>
+                  </div>
+              </div>
+
+              <div class="lc-block mb-5 text-left">
+                  <div editable="rich">
+
+                      <ul>
+                          <li> 2 users</li>
+                          <li> 20 TB of secure storage</li>
+                          <li> Premium productivity features and simple, secure file sharing</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger " href="#" role="button">Try free for 30 days</a></div><!-- /lc-block -->
+          </div>
+      </div><!-- /col -->
+      <div class="col-lg-4 ">
+          <div class="lc-block py-3 rounded border">
+              <div class="lc-block mb-4 text-left px-4"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="text-primary" width="2em" height="2em" viewBox="0 0 24 24" style="" lc-helper="svg-icon" fill="currentColor">
+                      <path d="M5,3V21H11V17.5H13V21H19V3H5M7,5H9V7H7V5M11,5H13V7H11V5M15,5H17V7H15V5M7,9H9V11H7V9M11,9H13V11H11V9M15,9H17V11H15V9M7,13H9V15H7V13M11,13H13V15H11V13M15,13H17V15H15V13M7,17H9V19H7V17M15,17H17V19H15V17Z"></path>
+                  </svg>
+
+                  <span editable="inline" class="ml-2 fw-light">Large Team</span>
+              </div>
+              <div class="lc-block mb-5 px-4">
+                  <div editable="rich">
+                      <h2 class=" ">Ultimate</h2>
+
+                      <p class="h5 text-primary">$99.99 <span class="text-secondary fw-lighter">/month</span></p>
+                  </div>
+              </div>
+
+              <div class="lc-block mb-5 text-left">
+                  <div editable="rich">
+
+                      <ul>
+                          <li>+20 users</li>
+                          <li>100 TB of secure storage</li>
+                          <li> Premium productivity features and simple, secure file sharing</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="lc-block mb-4 text-center"><a class="btn btn-outline-danger" href="#" role="button">Try free for 30 days</a></div><!-- /lc-block -->
+          </div>
+      </div><!-- /col -->
+  </div>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<section class="bg-dark text-light">
+  <div class="container py-5">
+      <div class="row">
+          <div class="col-lg-3">
+              <div class="lc-block mb-4">
+                  <img class="img-fluid" alt="logo" src="https://cdn.livecanvas.com/media/svg/undraw-sample/undraw_connected_world_wuay.svg" style="max-height:10vh">
+              </div>
+              <div class="lc-block small">
+                  <div editable="rich">
+                      <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper matti pibus leo.</p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block py-2">
+                  <a class="text-decoration-none" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                          <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                      </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                          <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                      </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                          <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                      </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                          <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                      </svg>
+                  </a>
+                  <a class="text-decoration-none" href="#">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="1em" height="1em" lc-helper="svg-icon" fill="var(--bs-light)">
+                          <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                      </svg>
+                  </a>
+              </div>
+
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+              <div class="lc-block mb-4">
+                  <div editable="rich">
+                      <h4>Get Started</h4>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block small">
+                  <div editable="rich">
+                      <p>Tutorial</p>
+                      <p>Resources
+                          <br>
+                      </p>
+                      <p>Docs</p>
+                      <p>Example</p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+              <div class="lc-block mb-4">
+                  <div editable="rich">
+                      <h4>About us</h4>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block small">
+                  <div editable="rich">
+                      <p>Story</p>
+                      <p>Work with us</p>
+                      <p>Blog</p>
+                      <p>News</p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+          </div>
+          <div class="col-lg-2 offset-lg-1">
+              <div class="lc-block mb-4">
+                  <div editable="rich">
+                      <h4>Downloads</h4>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+              <div class="lc-block small">
+                  <div editable="rich">
+                      <p>Vertex 1.2</p>
+                      <p>Templates</p>
+                      <p>Sounds</p>
+                      <p>Gradients</p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+          </div>
+      </div>
+  </div>
+  <div class="py-5 container">
+      <div class="row">
+          <div class="col-6 small">
+              <div class="lc-block">
+                  <div editable="rich">
+                      <p>Copyright © My Company 2020</p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+          </div>
+          <div class="col-6 text-end small">
+              <div class="lc-block">
+                  <div editable="rich">
+                      <p>
+                          <a class="text-decoration-none" href="#">License Details</a> -
+                          <a class="text-decoration-none" href="#">Terms &amp; Conditions</a>
+                      </p>
+                  </div>
+              </div>
+              <!-- /lc-block -->
+          </div>
+      </div>
+  </div>
+</section>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
